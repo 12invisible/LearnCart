@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LearnCart - Educational E-Commerce</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Primary Navigation">
+    <div class="container">
+      <h1>LearnCart</h1>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#apply">Apply</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero" aria-label="Hero Section">
+    <div class="hero-content" role="banner">
+      <h2>Welcome to LearnCart</h2>
+      <p>Your one-stop shop for educational resources.</p>
+      <a href="#store" class="cta-button" role="button">Shop Now</a>
+    </div>
+
+    <div class="hero-store-box" aria-label="Featured Products in Hero">
+      <div class="product-hero-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=80&q=80" alt="Technicals book cover" />
+        <div class="product-title">Technicals</div>
+      </div>
+      <div class="product-hero-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=80&q=80" alt="Atomic Habit book cover" />
+        <div class="product-title">Atomic Habit</div>
+      </div>
+      <div class="product-hero-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=80&q=80" alt="Insane Ideas book cover" />
+        <div class="product-title">Insane Ideas</div>
+      </div>
+      <div class="product-hero-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=80&q=80" alt="Many More book cover" />
+        <div class="product-title">Many More</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="store" class="store" aria-label="Store Section">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img
+          src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=240&q=80"
+          alt="Book 1"
+        />
+        <h3>Book Title 1</h3>
+        <p>$19.99</p>
+        <button class="add-to-cart" type="button">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=240&q=80"
+          alt="Book 2"
+        />
+        <h3>Book Title 2</h3>
+        <p>$29.99</p>
+        <button class="add-to-cart" type="button">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=240&q=80"
+          alt="Book 3"
+        />
+        <h3>Book Title 3</h3>
+        <p>$22.99</p>
+        <button class="add-to-cart" type="button">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xGh4mU2fwpcx5tXP_6BnNt2Fzl-dWsSAYQ&s?auto=format&fit=crop&w=240&q=80"
+          alt="Book 4"
+        />
+        <h3>Book Title 4</h3>
+        <p>$14.99</p>
+        <button class="add-to-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply" class="apply" aria-label="Application Section">
+    <h2>Apply for Membership</h2>
+    <form id="application-form" novalidate>
+      <input type="text" placeholder="Your Name" name="name" required />
+      <input type="email" placeholder="Your Email" name="email" required />
+      <textarea placeholder="Why do you want to join?" name="reason" required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <section id="features" class="features" aria-label="Features Section">
+    <h2>Platform Benefits</h2>
+    <div class="features-grid">
+      <div class="feature" tabindex="0" role="region" aria-label="Quality Resources">
+        <h3>Quality Resources</h3>
+        <p>Access to a wide range of educational materials.</p>
+      </div>
+      <div class="feature" tabindex="0" role="region" aria-label="Expert Guidance">
+        <h3>Expert Guidance</h3>
+        <p>Learn from industry professionals and educators.</p>
+      </div>
+      <div class="feature" tabindex="0" role="region" aria-label="Community Support">
+        <h3>Community Support</h3>
+        <p>Join a community of learners and educators.</p>
+      </div>
+      <div class="feature" tabindex="0" role="region" aria-label="Flexible Learning">
+        <h3>Flexible Learning</h3>
+        <p>Learn at your own pace, anytime, anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-label="Contact Section">
+    <h2>Contact Us</h2>
+    <form id="contact-form" action="contact.php" method="POST" novalidate> 
+      <input type="text" placeholder="Your Name" name="name" required />
+      <input type="email" placeholder="Your Email" name="email" required />
+      <textarea placeholder="Your Message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2023 LearnCart. All rights reserved.</p>
+    <div class="social-icons" aria-label="Social Media Links">
+      <a href="https://www.instagram.com/portraitwalagallery/" aria-label="Facebook">Facebook</a>
+      <a href="https://x.com/_portraitwala" aria-label="Twitter">Twitter</a>
+      <a href="https://www.instagram.com/portraitwalagallery/" aria-label="Instagram">Instagram</a>
+    </div>
+  </footer>
+     
+  <script> src="script.js"</script>
+  
+</body>
+</html>
+
